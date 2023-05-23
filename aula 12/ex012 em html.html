@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que horas sao ?</title>
+    <style>
+        body{
+            text-align: center;
+            font: normal 20pt arial;
+            align-items: center;
+            background-image: url('papel.jpg');
+        }
+        input{
+            padding: 10px;
+            width: 150px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        div#buton{
+            margin-top: 20px;
+            font: bold;
+            
+        }
+        #exatas{
+            margin-top: 5px;
+            font: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="button" value="Checar Horário" onclick="checar()">
+    <div id="buton"></div>
+    <div id="exatas">
+
+    <script>
+        function checar(){
+            //var dar = document.getElementById('checar')
+            var exat = document.getElementById('exatas')
+            var imprimar = document.getElementById('buton')
+            var agora = new Date()
+            var hora = agora.getHours
+            exat.innerHTML = `Agora são exatamente <strong>${agora}</strong> horas`
+            if ( hora <= 12 && hora >= 5 ){
+                imprimar.innerHTML = 'Bom dia'
+                imprimar.style.color = 'yellow'
+                exat.style.color = 'yellow'
+            }else if (hora <=  18 && hora > 12){
+                imprimar.innerHTML = 'Boa tarde'
+                imprimar.style.color = 'orange'
+                exat.style.color = 'orange'
+            }else if (hora <= 4 && hora > 1){
+                imprimar.innerHTML = 'Boa madrugada'
+                imprimar.style.color = 'darkblue'
+                exat.style.color = 'darkblue'
+            }else {
+                imprimar.innerHTML = 'Boa noite'
+                imprimar.style.color = 'blue'
+                exat.style.color = 'blue'
+            }
+        }
+    </script>
+</body>
+</html>

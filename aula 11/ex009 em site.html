@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual Naciolidade</title>
+    <style>
+        body{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #resultado{
+            margin-top: 10px;
+        }
+       #calcular{
+        margin-top: 15px;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Brasileiro ou Estrangeiro</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()" id="calcular">
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var txt = document.getElementById('txtpais')
+            var pais = 'brasil'
+            var tpais = String(txt.value).toLowerCase()
+            var res = document.getElementById('resultado')
+            if(tpais != pais ){
+                res.innerHTML = 'voce e estrangeiro pah'
+                res.style.font = 'normal 18pt arial'
+            }else{
+                res.innerHTML = 'voce e brasileiro'
+                res.style.font = 'normal 18pt arial'
+            }
+        }
+    </script>
+</body>
+</html>
