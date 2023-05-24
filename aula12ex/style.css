@@ -29,12 +29,12 @@ section{
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 40%;
+    width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
 
 }
-x
+
 
 
 img{
@@ -51,29 +51,18 @@ a{
     text-decoration: none;
     font: bold Roboto;
 }
-/*@media screen and (max-width: 375px){
-    *{
-        padding: 0px;
-        margin: 0px;
+@media screen and (max-width: 375px){
+    body{
+        text-align: center;
+        align-items: center;
     }
-   body{
-    width: 100%;
+   section{
+    width: 70%;
    }
-    section,h1,footer{
-        padding: 20px;
-    
-    }
-    div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-self: center;
-        
-    }
-    #verifi{
-        margin-bottom: 10px;
-        margin-top: 10px;
-            padding: 5px;
-    }
-
+ /* input{
+    width: 100%;
 }*/
+img{
+    width: 100%;
+}
+}
