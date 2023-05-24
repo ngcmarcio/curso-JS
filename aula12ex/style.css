@@ -49,13 +49,28 @@ a{
     text-decoration: none;
     font: bold Roboto;
 }
-@media screen and (max-width: 750px  ){
+@media screen and (max-width: 375px){
     *{
         padding: 0px;
         margin: 0px;
     }
+   body{
+    width: 100%;
+   }
     section,h1,footer{
-        width: 100%;
-        margin: auto;
+        padding: 20px;
+    
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-self: center;
+        
+    }
+    #verifi{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 5px;
     }
 }
