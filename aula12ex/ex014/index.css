@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(141, 141, 238);
+    text-align: center;
+    margin: auto;
+}
+header{
+    color: white;
+}
+section{
+    margin: auto;
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+}
+#msg{
+    padding: 10px;
+    font-weight: bold;
+}
+#foto{
+    padding: 10px;
+}
+footer{
+    font-style: italic;
+}
